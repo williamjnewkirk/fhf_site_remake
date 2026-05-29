@@ -1,0 +1,154 @@
+# Flagel Huber Flagel — Complete Site Content for LLM Indexing
+
+This file contains the full structured content of the Flagel Huber Flagel website for use by AI language models and search engines. See /llms.txt for a summary version.
+
+## Company Identity
+
+**Legal Name:** Flagel Huber Flagel
+**DBA / Common Name:** FHF
+**Type:** Independent Certified Public Accounting and Advisory Firm
+**Founded:** 1933
+**Headquarters:** Dayton, Ohio
+**Tagline:** "Building Lifelong Prosperity"
+**Mission:** To provide straightforward accounting, tax, and business advice that helps clients build lifelong prosperity.
+**Email:** info@fhf-cpa.com
+**Website:** https://fhf-cpa.com
+
+---
+
+## Offices
+
+**Cincinnati**
+9135 Governors Way, Cincinnati, OH 45249
+Phone: 513-774-0300
+
+**Dayton (Headquarters)**
+3400 South Dixie Drive, Dayton, OH 45439
+Phone: 937-299-3400
+
+**Troy**
+1061 South Dorset Road, Troy, OH 45373
+Phone: 937-339-3118
+
+**Fax (all locations):** 937-293-5481
+**Office Hours:** Monday–Friday, 8:00 AM – 5:00 PM ET
+
+---
+
+## Services — Detailed Descriptions
+
+### Tax Services
+FHF tax professionals provide comprehensive tax planning and compliance services for individuals, families, and businesses of all sizes. Beyond simple tax return preparation, FHF identifies multi-year strategies to minimize tax burden.
+
+Includes: individual and business tax return preparation, multi-year strategic tax planning, IRS audit representation, state and local tax compliance, tax-efficient business structuring.
+
+### Assurance Services
+FHF delivers audits, reviews, and compilations with objectivity and thoroughness. Serves privately held companies, nonprofits, and employee benefit plans.
+
+Includes: financial statement audits, review and compilation engagements, employee benefit plan audits, nonprofit organization audits, internal control assessments.
+
+### Small Business Accounting
+FHF serves as an outsourced accounting department for small businesses, handling day-to-day financial record-keeping.
+
+Includes: monthly bookkeeping and reconciliation, financial statement preparation, payroll processing and reporting, cash flow management, QuickBooks setup and training.
+
+### Business Valuations
+FHF holds the ABV (Accredited in Business Valuation) credential and provides defensible valuations for a wide range of purposes.
+
+Includes: buy-sell agreement valuations, estate and gift tax valuations, ESOP feasibility and valuation, litigation support valuations, M&A due diligence.
+
+### Litigation Support
+FHF provides forensic accounting, expert witness services (CFF credentialed), and financial analysis for legal matters.
+
+Includes: expert witness testimony, forensic accounting investigations, lost profits and damages calculations, business dispute financial analysis, divorce financial analysis.
+
+### Employee Stock Ownership Plans (ESOP)
+ESOPs are a business succession and tax planning tool. FHF guides owners from feasibility through ongoing compliance.
+
+Includes: ESOP feasibility studies, transaction advisory and structuring, annual ESOP valuations, DOL audit representation, ongoing trustee and plan advisory.
+
+### Employee Benefit Plan Audits
+Plans with 100+ eligible participants generally require an annual independent audit under ERISA. FHF has extensive experience with 401(k), 403(b), and profit-sharing plans.
+
+Includes: 401(k) and 403(b) plan audits, ERISA compliance review, DOL examination support, plan correction consulting, Form 5500 preparation.
+
+### Business Advisory
+FHF advisors serve as a sounding board and strategic partner for business owners.
+
+Includes: business succession planning, buy-sell agreement structuring, profit improvement analysis, cash flow forecasting, strategic planning facilitation.
+
+### Trust & Estate Tax Planning
+FHF works with families and estate planning attorneys to minimize estate and gift taxes and structure trusts efficiently.
+
+Includes: estate and gift tax planning, fiduciary income tax returns (Form 1041), trust administration coordination, generation-skipping transfer tax planning, charitable giving strategies.
+
+---
+
+## Industries / Client Sectors
+
+### Family & Closely Held Businesses
+Unique blend of personal and business financial concerns, succession planning, buy-sell agreements, family business legacy protection.
+
+### Real Estate
+Cost segregation, 1031 exchanges, passive activity rules, entity structuring for investors, developers, and operators.
+
+### Manufacturing & Distribution
+Inventory accounting, cost accounting, R&D tax credits, operational insight for margin improvement and growth management.
+
+### Restaurants & Retail
+Cash management, sales tax compliance, financial oversight for operators.
+
+### Healthcare & Medical Practices
+Practice management advisory, entity structuring, retirement plan optimization, complex healthcare tax issues for physicians, dentists, and healthcare organizations.
+
+### Nonprofit Organizations
+Audit services, Form 990 preparation, advisory for boards, fiduciary responsibility support, public trust maintenance.
+
+### Individuals & High Net Worth
+Personalized tax planning, investment tax strategy, estate planning coordination for executives, business owners, retirees, and investors.
+
+---
+
+## Team & Credentials
+
+**Staff Size:** 50+ employees, 30+ CPAs
+**Firm Type:** Locally owned, independent (not part of a national network)
+
+**Partners (partial list):**
+- Kevin Behrle, CPA — Partner
+- Dave Dirksen, CPA — Partner
+- Liz Downer, CPA — Partner
+- Bruce Kreinbrink, CPA, ABV — Partner
+- Randy Kuvin, CPA — Partner
+
+**Credentials held by team members:**
+- CPA — Certified Public Accountant (all partners and most senior staff)
+- ABV — Accredited in Business Valuation (business valuation specialists)
+- CFP® — Certified Financial Planner
+- CFF — Certified in Financial Forensics (litigation support specialists)
+
+---
+
+## Key Differentiators
+
+1. Founded 1933 — nearly a century of continuous service in Ohio
+2. Local and independent — not a national chain or franchise
+3. Consistent staff continuity — clients keep the same team year after year
+4. Full-service firm — from basic bookkeeping to complex ESOP and forensic accounting
+5. Three Ohio offices — Greater Cincinnati, Greater Dayton, and Miami Valley (Troy)
+6. Advanced specialty credentials — ABV, CFF, CFP® on staff
+
+---
+
+## Client Testimonial
+
+"FHF have consistently provided outstanding audit service for many years. The continuity of their staff assigned to our engagement has been extremely beneficial." — Neal Pemberton (Google Reviews)
+
+---
+
+## Online Portals
+
+- **Client Secure Portal:** https://fhf-cpa.sharefile.com
+- **Online Payment:** https://payerexpress.com/ebp/FHF/
+- **Facebook:** https://www.facebook.com/FlagelHuberFlagel
+- **LinkedIn:** https://www.linkedin.com/company/flagel-huber-flagel
