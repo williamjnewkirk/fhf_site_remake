@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "deploy": "npm run build && gh-pages -d out",
+    "build:ghpages": "cross-env GITHUB_PAGES_BASE_PATH=fhf_site_remake next build",
+    "deploy": "gh-pages -d out",
     "start": "next start",
     "lint": "eslint"
   },
@@ -24,6 +25,7 @@
     "eslint-config-next": "16.2.6",
     "gh-pages": "^5.0.0",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "cross-env": "^7.0.3"
   }
 }
