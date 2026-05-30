@@ -97,7 +97,7 @@ export default async function IndustryPage({ params }: Props) {
   return (
     <>
       {/* Hero */}
-      <section className="py-20" style={{ background: `linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%)` }} aria-label="Page header">
+      <section className="py-20" style={{ background: "linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%)" }} aria-label="Page header">
         <div className="max-w-7xl mx-auto px-4">
           <nav className="text-sm text-gray-400 mb-6" aria-label="Breadcrumb">
             <ol className="flex gap-2">
@@ -121,6 +121,21 @@ export default async function IndustryPage({ params }: Props) {
           </div>
         </div>
       </section>
+
+      {/* Industry photo from original site */}
+      {industry.photo && (
+        <div className="relative w-full overflow-hidden" style={{ maxHeight: "420px" }}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={industry.photo}
+            alt={industry.title}
+            className="w-full object-cover"
+            style={{ maxHeight: "420px" }}
+            loading="lazy"
+          />
+          <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, transparent 60%, rgba(255,255,255,0.4) 100%)" }} />
+        </div>
+      )}
 
       {/* Main content */}
       <section className="py-20 bg-white" aria-label="Industry detail">
@@ -176,10 +191,10 @@ export default async function IndustryPage({ params }: Props) {
 
             {/* Sidebar */}
             <aside>
-              <div className="rounded-2xl p-8 text-white mb-6" style={{ background: `linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%)` }}>
+              <div className="rounded-2xl p-8 text-white mb-6" style={{ background: "linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%)" }}>
                 <h3 className="font-bold text-xl mb-3">Speak With a Specialist</h3>
                 <p className="text-gray-300 text-sm mb-6">We understand your industry. Let&apos;s talk about your specific situation.</p>
-                <Link href="/contact" className="block text-center py-3 px-6 rounded-lg font-semibold text-white" style={{ backgroundColor: "var(--gold)" }}>
+                <Link href="/contact" className="block text-center py-3 px-6 rounded-lg font-semibold text-white" style={{ backgroundColor: "var(--green)" }}>
                   Contact Us Today
                 </Link>
               </div>

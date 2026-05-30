@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Menu, X, ChevronDown, Phone, LogIn } from "lucide-react";
 import { company, navLinks, offices } from "@/lib/data";
+import { withBasePath } from "@/lib/path";
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -47,7 +48,7 @@ export default function Header() {
       <nav className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between" aria-label="Main navigation">
         <Link href="/" aria-label="Flagel Huber Flagel — Home">
           <Image
-            src="/images/logo/fhf-logo-horizontal.svg"
+            src={withBasePath("/images/logo/fhf-logo-horizontal.svg")}
             alt="Flagel Huber Flagel"
             width={220}
             height={32}
@@ -89,7 +90,7 @@ export default function Header() {
           ))}
           <li>
             <Link href="/contact" className="ml-2 px-5 py-2 rounded text-sm font-semibold text-white transition-colors"
-              style={{ backgroundColor: "var(--gold)" }}
+              style={{ backgroundColor: "var(--green)" }}
               onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "var(--gold-light)")}
               onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "var(--gold)")}
             >
@@ -128,7 +129,7 @@ export default function Header() {
               <a href={company.clientPortal} target="_blank" rel="noopener noreferrer" className="block px-3 py-2 text-sm font-medium text-blue-900 border border-blue-900 rounded text-center">
                 Client Login
               </a>
-              <Link href="/contact" className="block px-3 py-2 text-sm font-semibold text-white rounded text-center" style={{ backgroundColor: "var(--gold)" }} onClick={() => setMobileOpen(false)}>
+              <Link href="/contact" className="block px-3 py-2 text-sm font-semibold text-white rounded text-center" style={{ backgroundColor: "var(--green)" }} onClick={() => setMobileOpen(false)}>
                 Contact Us
               </Link>
             </div>

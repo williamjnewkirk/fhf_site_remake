@@ -68,7 +68,7 @@ export default function CareersPage() {
                 { icon: Heart, title: "Culture That Lasts", desc: "Our staff retention is a point of pride — and clients notice the difference." },
               ].map((item) => (
                 <div key={item.title} className="flex gap-4 p-5 rounded-xl border border-gray-100 shadow-sm">
-                  <div className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style={{ backgroundColor: "rgba(26,46,74,0.08)" }}>
+                  <div className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style={{ backgroundColor: "rgba(14,76,133,0.08)" }}>
                     <item.icon size={22} style={{ color: "var(--navy)" }} />
                   </div>
                   <div>
@@ -118,7 +118,7 @@ export default function CareersPage() {
                     </div>
                     <p className="text-gray-600 text-sm">{job.description}</p>
                   </div>
-                  <a href={`mailto:${company.email}?subject=Application: ${job.title}`} className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-semibold text-white flex-shrink-0" style={{ backgroundColor: "var(--gold)" }}>
+                  <a href={`mailto:${company.email}?subject=Application: ${job.title}`} className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-semibold text-white flex-shrink-0" style={{ backgroundColor: "var(--green)" }}>
                     Apply Now <ArrowRight size={14} />
                   </a>
                 </div>

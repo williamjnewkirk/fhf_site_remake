@@ -111,7 +111,7 @@ export default async function ServicePage({ params }: Props) {
               <div className="rounded-2xl p-8 mb-6 text-white" style={{ background: `linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%)` }}>
                 <h3 className="font-bold text-xl mb-3">Ready to Get Started?</h3>
                 <p className="text-gray-300 text-sm mb-6">Talk with a {service.title} specialist — no obligation, just a conversation.</p>
-                <Link href="/contact" className="block text-center py-3 px-6 rounded-lg font-semibold text-white transition-colors" style={{ backgroundColor: "var(--gold)" }}>
+                <Link href="/contact" className="block text-center py-3 px-6 rounded-lg font-semibold text-white transition-colors" style={{ backgroundColor: "var(--green)" }}>
                   Schedule a Consultation
                 </Link>
               </div>

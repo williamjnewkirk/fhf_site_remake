@@ -1,11 +1,20 @@
 @import "tailwindcss";
 
 :root {
-  --navy: #1a2e4a;
-  --navy-dark: #0f1e31;
-  --navy-light: #2a4a6b;
-  --gold: #c9a84c;
-  --gold-light: #e8c76a;
+  /* ── Flagel's Blue (primary brand color #0E4C85) ── */
+  --navy: #0E4C85;
+  --navy-dark: #083872;
+  --navy-light: #1a5fa0;
+
+  /* ── Light Blue (brand accent / secondary #58A8CF) ── */
+  --gold: #58A8CF;
+  --gold-light: #7ec0de;
+
+  /* ── Green (brand action / CTA color #4BA44B) ── */
+  --green: #4BA44B;
+
+  /* ── Neutrals ── */
+  --brand-gray: #808285;
   --gray-50: #f8f9fa;
   --gray-100: #f1f3f5;
   --gray-600: #6c757d;
@@ -18,6 +27,7 @@
   --color-navy-light: var(--navy-light);
   --color-gold: var(--gold);
   --color-gold-light: var(--gold-light);
+  --color-green: var(--green);
   --font-sans: var(--font-geist-sans);
 }
 

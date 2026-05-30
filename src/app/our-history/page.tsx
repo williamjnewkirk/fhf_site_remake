@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -10,13 +11,48 @@ export const metadata: Metadata = {
 };
 
 const managingPartners = [
-  { years: "1933–1981", name: "David Flagel", note: "Founder — launched the firm during the Great Depression, personally recruiting clients and charging $6 for a half-day engagement." },
-  { years: "1981–1989", name: "Gerald P. Flagel", note: "David's son, continuing the family's legacy and expanding the firm's client base." },
-  { years: "1989–1992", name: "Arthur J. Huber", note: "Guided the firm through early 1990s economic challenges." },
-  { years: "1992–1996", name: "Louis G. Homan", note: "Focused on service quality and professional development." },
-  { years: "1996–2008", name: "J.R. Hochwalt", note: "Expanded services and geographic reach across the Miami Valley region." },
-  { years: "2008–2022", name: "Randall S. Kuvin, CPA/ABV, CFF", note: "Navigated the Great Recession, COVID-19 pandemic, and completed two strategic mergers that strengthened the firm's capabilities." },
-  { years: "2022–Present", name: "Jeff Woeste, CPA", note: "Current Managing Partner, continuing FHF's tradition of proactive client service and thoughtful growth." },
+  {
+    years: "1933–1981",
+    name: "David Flagel",
+    note: "Founder — launched the firm during the Great Depression, personally recruiting clients and charging $6 for a half-day engagement.",
+    photo: "https://fhf-cpa.com/wp-content/uploads/2021/09/david-flagel.jpg",
+  },
+  {
+    years: "1981–1989",
+    name: "Gerald P. Flagel",
+    note: "David's son, continuing the family's legacy and expanding the firm's client base.",
+    photo: "https://fhf-cpa.com/wp-content/uploads/2021/09/gerald-flagel.jpg",
+  },
+  {
+    years: "1989–1992",
+    name: "Arthur J. Huber",
+    note: "Guided the firm through early 1990s economic challenges.",
+    photo: "https://fhf-cpa.com/wp-content/uploads/2021/09/arthur-huber.jpg",
+  },
+  {
+    years: "1992–1996",
+    name: "Louis G. Homan",
+    note: "Focused on service quality and professional development.",
+    photo: "https://fhf-cpa.com/wp-content/uploads/2021/09/louis-homan.jpg",
+  },
+  {
+    years: "1996–2008",
+    name: "J.R. Hochwalt",
+    note: "Expanded services and geographic reach across the Miami Valley region.",
+    photo: "https://fhf-cpa.com/wp-content/uploads/2021/09/jr-hochwalt.jpg",
+  },
+  {
+    years: "2008–2022",
+    name: "Randall S. Kuvin, CPA/ABV, CFF",
+    note: "Navigated the Great Recession, COVID-19 pandemic, and completed two strategic mergers that strengthened the firm's capabilities.",
+    photo: "https://fhf-cpa.com/wp-content/uploads/2023/02/history-randy-kuvin.jpg",
+  },
+  {
+    years: "2022–Present",
+    name: "Jeff Woeste, CPA",
+    note: "Current Managing Partner, continuing FHF's tradition of proactive client service and thoughtful growth.",
+    photo: "https://fhf-cpa.com/wp-content/uploads/2024/05/FlagelHuber-websize-Woeste-sm.jpg",
+  },
 ];
 
 const founderValues = [
@@ -43,7 +79,7 @@ export default function OurHistoryPage() {
   return (
     <>
       {/* Page header */}
-      <section className="py-20" style={{ background: `linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%)` }} aria-label="Page header">
+      <section className="py-20" style={{ background: "linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%)" }} aria-label="Page header">
         <div className="max-w-7xl mx-auto px-4">
           <nav className="text-sm text-gray-400 mb-6" aria-label="Breadcrumb">
             <ol className="flex gap-2">
@@ -111,18 +147,31 @@ export default function OurHistoryPage() {
         </div>
       </section>
 
-      {/* Managing partners */}
+      {/* Managing partners with photos */}
       <section className="py-20" style={{ backgroundColor: "var(--gray-50)" }} aria-labelledby="leaders-heading">
-        <div className="max-w-4xl mx-auto px-4">
+        <div className="max-w-5xl mx-auto px-4">
           <h2 id="leaders-heading" className="text-3xl font-bold mb-12 text-center" style={{ color: "var(--navy)" }}>Managing Partners</h2>
-          <div className="space-y-4">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {managingPartners.map((p) => (
-              <div key={p.name} className="bg-white rounded-xl p-6 border border-gray-100 shadow-sm">
-                <div className="flex flex-wrap items-start justify-between gap-2 mb-2">
-                  <h3 className="font-bold text-lg" style={{ color: "var(--navy)" }}>{p.name}</h3>
-                  <time className="text-sm font-medium px-3 py-1 rounded-full" style={{ backgroundColor: "rgba(201,168,76,0.12)", color: "var(--gold)" }}>{p.years}</time>
+              <div key={p.name} className="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm">
+                {p.photo && (
+                  <div className="relative w-full" style={{ aspectRatio: "4/3" }}>
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={p.photo}
+                      alt={p.name}
+                      className="w-full h-full object-cover object-top"
+                      loading="lazy"
+                    />
+                  </div>
+                )}
+                <div className="p-5">
+                  <div className="flex flex-wrap items-start justify-between gap-2 mb-2">
+                    <h3 className="font-bold text-base" style={{ color: "var(--navy)" }}>{p.name}</h3>
+                    <time className="text-xs font-medium px-3 py-1 rounded-full flex-shrink-0" style={{ backgroundColor: "rgba(88,168,207,0.12)", color: "var(--gold)" }}>{p.years}</time>
+                  </div>
+                  <p className="text-gray-600 text-sm">{p.note}</p>
                 </div>
-                <p className="text-gray-600 text-sm">{p.note}</p>
               </div>
             ))}
           </div>
@@ -130,11 +179,11 @@ export default function OurHistoryPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16" style={{ background: `linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%)` }} aria-label="CTA">
+      <section className="py-16" style={{ background: "linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%)" }} aria-label="CTA">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <h2 className="text-2xl font-bold text-white mb-4">Become Part of Our Story</h2>
           <p className="text-gray-300 mb-8">Clients have trusted FHF for generations. We would be honored to earn your trust too.</p>
-          <Link href="/contact" className="inline-flex items-center gap-2 px-8 py-4 rounded-lg text-lg font-semibold text-white transition-all hover:opacity-90" style={{ backgroundColor: "var(--gold)" }}>
+          <Link href="/contact" className="inline-flex items-center gap-2 px-8 py-4 rounded-lg text-lg font-semibold text-white transition-all hover:opacity-90" style={{ backgroundColor: "var(--green)" }}>
             Talk With Us <ArrowRight size={20} />
           </Link>
         </div>

@@ -19,6 +19,7 @@ function LinkedinIcon({ size = 16 }: { size?: number }) {
   );
 }
 import { company, offices, services, industries } from "@/lib/data";
+import { withBasePath } from "@/lib/path";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -30,7 +31,7 @@ export default function Footer() {
           <div>
             <Link href="/" className="block mb-4" aria-label="Flagel Huber Flagel — Home">
               <Image
-                src="/images/logo/fhf-logo-footer.svg"
+                src={withBasePath("/images/logo/fhf-logo-footer.svg")}
                 alt="Flagel Huber Flagel"
                 width={220}
                 height={44}

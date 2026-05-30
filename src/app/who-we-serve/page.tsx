@@ -68,13 +68,13 @@ export default function WhoWeServePage() {
                 <div className={`grid lg:grid-cols-5 gap-12 items-start ${i % 2 === 1 ? "lg:grid-flow-col-dense" : ""}`}>
                   <div className={`lg:col-span-3 ${i % 2 === 1 ? "lg:col-start-3" : ""}`}>
                     <div className="flex items-center gap-4 mb-6">
-                      <div className="w-16 h-16 rounded-2xl flex items-center justify-center flex-shrink-0" style={{ backgroundColor: "rgba(26,46,74,0.08)" }}>
+                      <div className="w-16 h-16 rounded-2xl flex items-center justify-center flex-shrink-0" style={{ backgroundColor: "rgba(14,76,133,0.08)" }}>
                         {industry.iconImg && <Image src={industry.iconImg} alt="" width={36} height={36} aria-hidden="true" />}
                       </div>
                       <h2 className="text-2xl md:text-3xl font-bold" style={{ color: "var(--navy)" }}>{industry.title}</h2>
                     </div>
                     <p className="text-gray-600 text-lg leading-relaxed mb-8">{industry.description}</p>
-                    <Link href="/contact" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-semibold text-white" style={{ backgroundColor: "var(--gold)" }}>
+                    <Link href="/contact" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-semibold text-white" style={{ backgroundColor: "var(--green)" }}>
                       Speak with a Specialist <ArrowRight size={16} />
                     </Link>
                   </div>
@@ -111,7 +111,7 @@ export default function WhoWeServePage() {
           <p className="text-gray-300 mb-8">
             Reach out to our team for a conversation about your specific situation.
           </p>
-          <Link href="/contact" className="inline-flex items-center gap-2 px-8 py-4 rounded-lg text-lg font-semibold text-white transition-all hover:opacity-90" style={{ backgroundColor: "var(--gold)" }}>
+          <Link href="/contact" className="inline-flex items-center gap-2 px-8 py-4 rounded-lg text-lg font-semibold text-white transition-all hover:opacity-90" style={{ backgroundColor: "var(--green)" }}>
             Contact Us <ArrowRight size={20} />
           </Link>
         </div>

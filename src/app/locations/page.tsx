@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Phone, Mail, MapPin, Printer } from "lucide-react";
 import { offices, company } from "@/lib/data";
+import { withBasePath } from "@/lib/path";
 
 export const metadata: Metadata = {
   title: "Our Locations — Cincinnati, Dayton & Troy, Ohio",
@@ -12,9 +13,9 @@ export const metadata: Metadata = {
 };
 
 const officePhotos: Record<string, string> = {
-  cincinnati: "/images/offices/cincinnati.jpg",
-  dayton: "/images/offices/dayton.jpg",
-  troy: "/images/offices/troy.jpg",
+  cincinnati: withBasePath("/images/offices/cincinnati.jpg"),
+  dayton: withBasePath("/images/offices/dayton.jpg"),
+  troy: withBasePath("/images/offices/troy.jpg"),
 };
 
 export default function LocationsPage() {
@@ -53,7 +54,7 @@ export default function LocationsPage() {
                     sizes="(max-width: 1024px) 100vw, 50vw"
                   />
                 ) : (
-                  <div className="w-full h-full flex items-center justify-center" style={{ backgroundColor: "rgba(26,46,74,0.06)" }}>
+                  <div className="w-full h-full flex items-center justify-center" style={{ backgroundColor: "rgba(14,76,133,0.06)" }}>
                     <MapPin size={48} style={{ color: "var(--navy)", opacity: 0.3 }} />
                   </div>
                 )}
@@ -87,7 +88,7 @@ export default function LocationsPage() {
                   <a href={office.mapLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-semibold text-white transition-colors" style={{ backgroundColor: "var(--navy)" }}>
                     <MapPin size={15} /> Get Directions
                   </a>
-                  <Link href="/contact" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-semibold text-white transition-colors" style={{ backgroundColor: "var(--gold)" }}>
+                  <Link href="/contact" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-semibold text-white transition-colors" style={{ backgroundColor: "var(--green)" }}>
                     Contact This Office
                   </Link>
                 </div>

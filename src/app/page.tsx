@@ -37,7 +37,7 @@ export default function HomePage() {
         </div>
         <div className="relative max-w-7xl mx-auto px-4 py-24 md:py-36">
           <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 mb-6 text-sm font-medium" style={{ backgroundColor: "rgba(201,168,76,0.15)", color: "var(--gold-light)", border: "1px solid rgba(201,168,76,0.3)" }}>
+            <div className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 mb-6 text-sm font-medium" style={{ backgroundColor: "rgba(88,168,207,0.15)", color: "var(--gold-light)", border: "1px solid rgba(88,168,207,0.3)" }}>
               <Star size={14} fill="currentColor" /> Trusted CPA Firm Since 1933
             </div>
             <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight mb-6">
@@ -48,7 +48,7 @@ export default function HomePage() {
               Straightforward accounting, tax, and business advice from a dedicated team of 30+ CPAs across three Ohio offices. We are Flagel Huber Flagel.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Link href="/contact" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-lg text-base font-semibold text-white transition-all hover:opacity-90 hover:translate-y-[-1px]" style={{ backgroundColor: "var(--gold)" }}>
+              <Link href="/contact" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-lg text-base font-semibold text-white transition-all hover:opacity-90 hover:translate-y-[-1px]" style={{ backgroundColor: "var(--green)" }}>
                 Schedule a Consultation <ArrowRight size={18} />
               </Link>
               <Link href="/what-we-do" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-lg text-base font-semibold text-white border border-white/30 hover:bg-white/10 transition-all">
@@ -93,7 +93,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service) => (
               <Link key={service.id} href={`/what-we-do#${service.id}`} className="group bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-md hover:border-blue-100 transition-all">
-                <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style={{ backgroundColor: "rgba(26,46,74,0.08)" }}>
+                <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style={{ backgroundColor: "rgba(14,76,133,0.08)" }}>
                   {service.iconImg ? (
                     <Image src={service.iconImg} alt="" width={28} height={28} aria-hidden="true" />
                   ) : null}
@@ -128,7 +128,7 @@ export default function HomePage() {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {industries.map((industry) => (
               <Link key={industry.id} href={`/who-we-serve#${industry.id}`} className="group flex flex-col items-center text-center p-6 rounded-xl border border-gray-100 hover:border-blue-200 hover:bg-blue-50/30 transition-all">
-                <div className="w-14 h-14 rounded-full flex items-center justify-center mb-3" style={{ backgroundColor: "rgba(26,46,74,0.06)" }}>
+                <div className="w-14 h-14 rounded-full flex items-center justify-center mb-3" style={{ backgroundColor: "rgba(14,76,133,0.06)" }}>
                   {industry.iconImg && <Image src={industry.iconImg} alt="" width={32} height={32} aria-hidden="true" />}
                 </div>
                 <h3 className="font-semibold text-sm text-gray-800 group-hover:text-blue-900 transition-colors">{industry.title}</h3>
@@ -205,7 +205,7 @@ export default function HomePage() {
             ))}
           </div>
           <div className="text-center">
-            <Link href="/contact" className="inline-flex items-center gap-2 px-8 py-4 rounded-lg text-lg font-semibold text-white transition-all hover:opacity-90" style={{ backgroundColor: "var(--gold)" }}>
+            <Link href="/contact" className="inline-flex items-center gap-2 px-8 py-4 rounded-lg text-lg font-semibold text-white transition-all hover:opacity-90" style={{ backgroundColor: "var(--green)" }}>
               Contact Us Today <ArrowRight size={20} />
             </Link>
           </div>

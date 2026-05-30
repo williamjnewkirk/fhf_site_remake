@@ -72,7 +72,7 @@ export default function NewsPage() {
                 <div className="h-1.5 w-full" style={{ backgroundColor: "var(--gold)" }} />
                 <div className="p-6 flex flex-col flex-1">
                   <div className="flex items-center gap-2 mb-3">
-                    <span className="text-xs font-semibold px-2.5 py-1 rounded-full" style={{ backgroundColor: "rgba(201,168,76,0.12)", color: "var(--gold)" }}>
+                    <span className="text-xs font-semibold px-2.5 py-1 rounded-full" style={{ backgroundColor: "rgba(88,168,207,0.12)", color: "var(--gold)" }}>
                       {a.category}
                     </span>
                     <time className="flex items-center gap-1 text-xs text-gray-400">
@@ -96,7 +96,7 @@ export default function NewsPage() {
         <div className="max-w-3xl mx-auto px-4 text-center">
           <h2 className="text-2xl font-bold text-white mb-4">Get Tax Updates in Your Inbox</h2>
           <p className="text-gray-300 mb-8">We send timely, practical insights on tax law changes and business finance topics — no fluff, no spam.</p>
-          <Link href="/contact" className="inline-flex items-center gap-2 px-8 py-4 rounded-lg text-lg font-semibold text-white transition-all hover:opacity-90" style={{ backgroundColor: "var(--gold)" }}>
+          <Link href="/contact" className="inline-flex items-center gap-2 px-8 py-4 rounded-lg text-lg font-semibold text-white transition-all hover:opacity-90" style={{ backgroundColor: "var(--green)" }}>
             Subscribe to Updates <ArrowRight size={20} />
           </Link>
         </div>

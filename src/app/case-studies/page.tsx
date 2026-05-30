@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
+import { withBasePath } from "@/lib/path";
 
 export const metadata: Metadata = {
   title: "Case Studies — Real Results for Real Clients",
@@ -19,7 +20,7 @@ const caseStudies = [
     tag: "ESOP",
     excerpt:
       "When the founding partners of a 160-employee roof vacuuming company wanted to exit without selling to an outside buyer, FHF structured a complex ESOP transition that made every employee an owner — and created a multi-million-dollar employee-owned company.",
-    images: ["/images/case-studies/rk-owners.jpg", "/images/case-studies/rk-fleet.jpg"],
+    images: [withBasePath("/images/case-studies/rk-owners.jpg"), withBasePath("/images/case-studies/rk-fleet.jpg")],
     outcome: "100% employee-owned by 2019; 160 employees across Ohio, NC, and PA",
   },
   {
@@ -131,19 +132,19 @@ export default function CaseStudiesPage() {
                     />
                   </div>
                 ) : (
-                  <div className="w-full flex items-center justify-center py-12" style={{ backgroundColor: "rgba(26,46,74,0.06)" }}>
+                  <div className="w-full flex items-center justify-center py-12" style={{ backgroundColor: "rgba(14,76,133,0.06)" }}>
                     <span className="text-4xl font-bold opacity-10" style={{ color: "var(--navy)" }}>FHF</span>
                   </div>
                 )}
                 <div className="p-6 flex flex-col flex-1">
                   <div className="flex items-center gap-2 mb-3">
-                    <span className="px-2.5 py-1 rounded-full text-xs font-medium" style={{ backgroundColor: "rgba(201,168,76,0.12)", color: "var(--gold)" }}>{cs.tag}</span>
+                    <span className="px-2.5 py-1 rounded-full text-xs font-medium" style={{ backgroundColor: "rgba(88,168,207,0.12)", color: "var(--gold)" }}>{cs.tag}</span>
                     <span className="text-xs text-gray-400">{cs.industry}</span>
                   </div>
                   <h2 className="font-bold text-xl mb-1" style={{ color: "var(--navy)" }}>{cs.title}</h2>
                   <p className="text-sm font-medium text-gray-500 mb-3">{cs.client}</p>
                   <p className="text-gray-600 text-sm leading-relaxed mb-4 flex-1">{cs.excerpt}</p>
-                  <div className="rounded-lg p-3 mb-4 text-xs font-medium" style={{ backgroundColor: "rgba(26,46,74,0.04)", color: "var(--navy)" }}>
+                  <div className="rounded-lg p-3 mb-4 text-xs font-medium" style={{ backgroundColor: "rgba(14,76,133,0.04)", color: "var(--navy)" }}>
                     <strong>Outcome:</strong> {cs.outcome}
                   </div>
                   <Link href="/contact" className="text-sm font-medium flex items-center gap-1 hover:gap-2 transition-all" style={{ color: "var(--gold)" }}>
@@ -161,7 +162,7 @@ export default function CaseStudiesPage() {
         <div className="max-w-3xl mx-auto px-4 text-center">
           <h2 className="text-2xl font-bold text-white mb-4">Ready to Write Your Own Success Story?</h2>
           <p className="text-gray-300 mb-8">Our advisors are ready to help you tackle your most pressing financial challenges.</p>
-          <Link href="/contact" className="inline-flex items-center gap-2 px-8 py-4 rounded-lg text-lg font-semibold text-white transition-all hover:opacity-90" style={{ backgroundColor: "var(--gold)" }}>
+          <Link href="/contact" className="inline-flex items-center gap-2 px-8 py-4 rounded-lg text-lg font-semibold text-white transition-all hover:opacity-90" style={{ backgroundColor: "var(--green)" }}>
             Start a Conversation <ArrowRight size={20} />
           </Link>
         </div>

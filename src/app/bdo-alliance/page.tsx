@@ -30,7 +30,7 @@ export default function BDOAlliancePage() {
   return (
     <>
       {/* Page header */}
-      <section className="py-20" style={{ background: `linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%)` }} aria-label="Page header">
+      <section className="py-20" style={{ background: "linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%)" }} aria-label="Page header">
         <div className="max-w-7xl mx-auto px-4">
           <nav className="text-sm text-gray-400 mb-6" aria-label="Breadcrumb">
             <ol className="flex gap-2">
@@ -48,9 +48,20 @@ export default function BDOAlliancePage() {
         </div>
       </section>
 
-      {/* Intro */}
+      {/* Intro with BDO logo */}
       <section className="py-20 bg-white" aria-labelledby="bdo-heading">
         <div className="max-w-4xl mx-auto px-4">
+          {/* BDO Logo from original site */}
+          <div className="mb-10 flex justify-center">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="https://fhf-cpa.com/wp-content/uploads/2021/10/bdo-logo.png"
+              alt="BDO Alliance USA logo"
+              className="h-16 w-auto object-contain"
+              loading="lazy"
+            />
+          </div>
+
           <h2 id="bdo-heading" className="text-3xl font-bold mb-6" style={{ color: "var(--navy)" }}>What Is BDO Alliance USA?</h2>
           <p className="text-gray-700 text-lg leading-relaxed mb-6">
             BDO Alliance USA is a nationwide association of independently owned local and regional accounting, consulting, and service firms with aligned client service goals. It operates as a subsidiary of BDO USA, LLP — one of the largest accounting and advisory firms in the United States and part of the BDO International network.
@@ -97,13 +108,13 @@ export default function BDOAlliancePage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16" style={{ background: `linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%)` }} aria-label="CTA">
+      <section className="py-16" style={{ background: "linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%)" }} aria-label="CTA">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <h2 className="text-2xl font-bold text-white mb-4">Local Relationship. Global Capability.</h2>
           <p className="text-gray-300 mb-8">
             Whether your needs are local or international, FHF has the connections to help you navigate them.
           </p>
-          <Link href="/contact" className="inline-flex items-center gap-2 px-8 py-4 rounded-lg text-lg font-semibold text-white transition-all hover:opacity-90" style={{ backgroundColor: "var(--gold)" }}>
+          <Link href="/contact" className="inline-flex items-center gap-2 px-8 py-4 rounded-lg text-lg font-semibold text-white transition-all hover:opacity-90" style={{ backgroundColor: "var(--green)" }}>
             Contact Us
           </Link>
         </div>

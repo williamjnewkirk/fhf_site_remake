@@ -108,7 +108,7 @@ export default function ResourcesPage() {
               <article key={a.title} className="rounded-xl border border-gray-100 shadow-sm overflow-hidden hover:shadow-md transition-shadow">
                 <div className="p-6">
                   <div className="flex items-center gap-2 mb-3">
-                    <span className="px-2.5 py-1 rounded-full text-xs font-medium" style={{ backgroundColor: "rgba(201,168,76,0.12)", color: "var(--gold)" }}>{a.category}</span>
+                    <span className="px-2.5 py-1 rounded-full text-xs font-medium" style={{ backgroundColor: "rgba(88,168,207,0.12)", color: "var(--gold)" }}>{a.category}</span>
                     <span className="text-xs text-gray-400">{a.date}</span>
                   </div>
                   <h3 className="font-bold text-gray-900 mb-3 leading-snug">{a.title}</h3>
@@ -153,7 +153,7 @@ export default function ResourcesPage() {
               <div className="space-y-4">
                 {tools.map((t) => (
                   <a key={t.title} href={t.href} target="_blank" rel="noopener noreferrer" className="flex items-start gap-4 p-5 bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow group">
-                    <div className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0" style={{ backgroundColor: "rgba(26,46,74,0.08)" }}>
+                    <div className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0" style={{ backgroundColor: "rgba(14,76,133,0.08)" }}>
                       <t.icon size={18} style={{ color: "var(--navy)" }} />
                     </div>
                     <div>
@@ -176,7 +176,7 @@ export default function ResourcesPage() {
         <div className="max-w-3xl mx-auto px-4 text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">Questions about your specific situation?</h2>
           <p className="text-gray-300 mb-8">Our team is happy to answer questions and help you plan ahead.</p>
-          <Link href="/contact" className="inline-flex items-center gap-2 px-8 py-4 rounded-lg text-lg font-semibold text-white transition-all hover:opacity-90" style={{ backgroundColor: "var(--gold)" }}>
+          <Link href="/contact" className="inline-flex items-center gap-2 px-8 py-4 rounded-lg text-lg font-semibold text-white transition-all hover:opacity-90" style={{ backgroundColor: "var(--green)" }}>
             Contact an Advisor <ArrowRight size={20} />
           </Link>
         </div>

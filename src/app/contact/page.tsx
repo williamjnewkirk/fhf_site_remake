@@ -70,7 +70,7 @@ export default function ContactPage() {
 
               {/* Email */}
               <div className="flex gap-4 mb-8">
-                <div className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style={{ backgroundColor: "rgba(26,46,74,0.08)" }}>
+                <div className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style={{ backgroundColor: "rgba(14,76,133,0.08)" }}>
                   <Mail size={20} style={{ color: "var(--navy)" }} />
                 </div>
                 <div>
@@ -83,7 +83,7 @@ export default function ContactPage() {
 
               {/* Hours */}
               <div className="flex gap-4 mb-10">
-                <div className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style={{ backgroundColor: "rgba(26,46,74,0.08)" }}>
+                <div className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style={{ backgroundColor: "rgba(14,76,133,0.08)" }}>
                   <Clock size={20} style={{ color: "var(--navy)" }} />
                 </div>
                 <div>
@@ -175,7 +175,7 @@ export default function ContactPage() {
                     <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1.5">Message <span className="text-red-500">*</span></label>
                     <textarea id="message" name="message" required rows={5} placeholder="Tell us a bit about your situation..." className="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:border-blue-900 focus:ring-2 focus:ring-blue-900/20 outline-none transition-all text-sm resize-none" />
                   </div>
-                  <button type="submit" className="w-full flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg font-semibold text-white transition-all hover:opacity-90" style={{ backgroundColor: "var(--gold)" }}>
+                  <button type="submit" className="w-full flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg font-semibold text-white transition-all hover:opacity-90" style={{ backgroundColor: "var(--green)" }}>
                     <Send size={16} /> Send Message
                   </button>
                   <p className="text-xs text-gray-400 text-center">Your information is kept strictly confidential.</p>

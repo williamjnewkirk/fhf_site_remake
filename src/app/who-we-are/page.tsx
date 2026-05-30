@@ -158,7 +158,7 @@ export default function WhoWeArePage() {
                       sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw"
                     />
                   ) : (
-                    <div className="w-full h-full flex items-center justify-center" style={{ backgroundColor: "rgba(26,46,74,0.06)" }}>
+                    <div className="w-full h-full flex items-center justify-center" style={{ backgroundColor: "rgba(14,76,133,0.06)" }}>
                       <User size={40} style={{ color: "var(--navy)", opacity: 0.3 }} />
                     </div>
                   )}
@@ -197,7 +197,7 @@ export default function WhoWeArePage() {
           <p className="text-gray-300 mb-8">
             We are always looking for talented accounting professionals who share our commitment to client service and lifelong prosperity.
           </p>
-          <Link href="/careers" className="inline-flex items-center gap-2 px-8 py-4 rounded-lg text-lg font-semibold text-white transition-all hover:opacity-90" style={{ backgroundColor: "var(--gold)" }}>
+          <Link href="/careers" className="inline-flex items-center gap-2 px-8 py-4 rounded-lg text-lg font-semibold text-white transition-all hover:opacity-90" style={{ backgroundColor: "var(--green)" }}>
             View Open Positions <ArrowRight size={20} />
           </Link>
         </div>

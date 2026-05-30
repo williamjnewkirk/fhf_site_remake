@@ -86,7 +86,7 @@ export default function OurCommitmentPage() {
           <div className="grid md:grid-cols-3 gap-8">
             {pillars.map((p, i) => (
               <div key={i} className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
-                <div className="w-14 h-14 rounded-xl flex items-center justify-center mb-6" style={{ backgroundColor: "rgba(26,46,74,0.08)" }}>
+                <div className="w-14 h-14 rounded-xl flex items-center justify-center mb-6" style={{ backgroundColor: "rgba(14,76,133,0.08)" }}>
                   <p.icon size={28} style={{ color: "var(--navy)" }} />
                 </div>
                 <h3 className="font-bold text-xl mb-4" style={{ color: "var(--navy)" }}>{p.title}</h3>
@@ -134,7 +134,7 @@ export default function OurCommitmentPage() {
         <div className="max-w-3xl mx-auto px-4 text-center">
           <h2 className="text-2xl font-bold mb-4" style={{ color: "var(--navy)" }}>Experience the FHF Difference</h2>
           <p className="text-gray-600 mb-8">Talk with us — no commitment, just a conversation about your goals.</p>
-          <Link href="/contact" className="inline-flex items-center gap-2 px-8 py-4 rounded-lg text-lg font-semibold text-white transition-all hover:opacity-90" style={{ backgroundColor: "var(--gold)" }}>
+          <Link href="/contact" className="inline-flex items-center gap-2 px-8 py-4 rounded-lg text-lg font-semibold text-white transition-all hover:opacity-90" style={{ backgroundColor: "var(--green)" }}>
             Contact Us
           </Link>
         </div>

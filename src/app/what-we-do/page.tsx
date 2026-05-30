@@ -71,14 +71,14 @@ export default function WhatWeDoPage() {
                 <article key={service.id} id={service.id} className="scroll-mt-24">
                   <div className={`grid lg:grid-cols-2 gap-12 items-center ${i % 2 === 1 ? "lg:grid-flow-col-dense" : ""}`}>
                     <div className={i % 2 === 1 ? "lg:col-start-2" : ""}>
-                      <div className="w-14 h-14 rounded-xl flex items-center justify-center mb-6" style={{ backgroundColor: "rgba(26,46,74,0.08)" }}>
+                      <div className="w-14 h-14 rounded-xl flex items-center justify-center mb-6" style={{ backgroundColor: "rgba(14,76,133,0.08)" }}>
                         {service.iconImg && <Image src={service.iconImg} alt="" width={32} height={32} aria-hidden="true" />}
                       </div>
                       <h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: "var(--navy)" }}>
                         {service.title}
                       </h2>
                       <p className="text-gray-600 text-lg leading-relaxed mb-6">{service.description}</p>
-                      <Link href="/contact" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-semibold text-white transition-colors" style={{ backgroundColor: "var(--gold)" }}>
+                      <Link href="/contact" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-semibold text-white transition-colors" style={{ backgroundColor: "var(--green)" }}>
                         Talk to an Expert <ArrowRight size={16} />
                       </Link>
                     </div>
@@ -110,7 +110,7 @@ export default function WhatWeDoPage() {
           <p className="text-gray-600 mb-8">
             We will listen to your situation and point you in the right direction — no commitment required.
           </p>
-          <Link href="/contact" className="inline-flex items-center gap-2 px-8 py-4 rounded-lg text-lg font-semibold text-white transition-all hover:opacity-90" style={{ backgroundColor: "var(--gold)" }}>
+          <Link href="/contact" className="inline-flex items-center gap-2 px-8 py-4 rounded-lg text-lg font-semibold text-white transition-all hover:opacity-90" style={{ backgroundColor: "var(--green)" }}>
             Schedule a Free Consultation <ArrowRight size={20} />
           </Link>
         </div>
